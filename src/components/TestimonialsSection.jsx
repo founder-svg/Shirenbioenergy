@@ -667,8 +667,8 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                     </div>
 
                     <div>
-                      {/* Product Tag & Case Study Trigger */}
-                      <div className="flex items-center justify-between gap-2 mb-3 pt-2.5 border-t border-[#E0C46B]/15">
+                      {/* Product Tag & Location Badge */}
+                      <div className="flex items-center justify-between gap-2 pt-2.5 border-t border-[#E0C46B]/15">
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
@@ -680,35 +680,9 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                           {item.productUsed}
                         </button>
 
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            setSelectedCaseStudy(item);
-                          }}
-                          className="inline-flex items-center gap-1 text-[10px] font-bold text-[#F3D373] hover:underline"
-                        >
-                          <FileText className="w-3 h-3" />
-                          Case Study
-                        </button>
-                      </div>
-
-                      {/* Client Profile */}
-                      <div className="flex items-center gap-2.5 pt-2 border-t border-[#E0C46B]/15">
-                        <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#E0C46B] to-[#C99C33] text-[#4A4226] font-serif-heading font-black text-xs flex items-center justify-center shrink-0 shadow-md">
-                          {item.initials}
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-1">
-                            <h4 className="text-xs font-bold text-white truncate">{item.name}</h4>
-                            {item.verified && (
-                              <CheckCircle2 className="w-3.5 h-3.5 text-[#243A5E] shrink-0" title="Verified Client" />
-                            )}
-                          </div>
-                          <p className="text-[11px] text-[#E0C46B] truncate">{item.title}, {item.company}</p>
-                          <div className="flex items-center gap-1 text-[10px] text-[#DDD5BC]">
-                            <MapPin className="w-3 h-3 text-[#E0C46B]" />
-                            {item.location}
-                          </div>
+                        <div className="flex items-center gap-1 text-[10px] text-[#DDD5BC]">
+                          <MapPin className="w-3 h-3 text-[#E0C46B]" />
+                          {item.location}
                         </div>
                       </div>
                     </div>
@@ -754,8 +728,8 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                   </div>
 
                   <div>
-                    {/* Interactive Product & Case Study Action Tags */}
-                    <div className="flex items-center justify-between gap-2 mb-4 pt-3 border-t border-[#E0C46B]/15">
+                    {/* Product Tag & Location Badge */}
+                    <div className="flex items-center justify-between gap-2 pt-3 border-t border-[#E0C46B]/15">
                       <button
                         onClick={() => onOpenQuoteModal && onOpenQuoteModal(item.productUsed)}
                         className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-[#243A5E]/20 text-[#E6DFC7] border border-[#243A5E]/30 text-[11px] font-semibold hover:bg-[#243A5E]/30 transition-colors"
@@ -765,32 +739,9 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                         {item.productUsed}
                       </button>
 
-                      <button
-                        onClick={() => setSelectedCaseStudy(item)}
-                        className="inline-flex items-center gap-1 text-[11px] font-bold text-[#F3D373] hover:underline"
-                      >
-                        <FileText className="w-3 h-3" />
-                        Case Study
-                      </button>
-                    </div>
-
-                    {/* Client Profile */}
-                    <div className="flex items-center gap-3 pt-3 border-t border-[#E0C46B]/15">
-                      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#E0C46B] to-[#C99C33] text-[#4A4226] font-serif-heading font-black text-sm flex items-center justify-center shrink-0 shadow-md">
-                        {item.initials}
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-1.5">
-                          <h4 className="text-sm font-bold text-white truncate">{item.name}</h4>
-                          {item.verified && (
-                            <CheckCircle2 className="w-4 h-4 text-[#243A5E] shrink-0" title="Verified Client" />
-                          )}
-                        </div>
-                        <p className="text-xs text-[#E0C46B] truncate">{item.title}, {item.company}</p>
-                        <div className="flex items-center gap-1 text-[11px] text-[#DDD5BC] mt-0.5">
-                          <MapPin className="w-3 h-3 text-[#E0C46B]" />
-                          {item.location}
-                        </div>
+                      <div className="flex items-center gap-1 text-[11px] text-[#DDD5BC]">
+                        <MapPin className="w-3 h-3 text-[#E0C46B]" />
+                        {item.location}
                       </div>
                     </div>
                   </div>
@@ -870,8 +821,8 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                 </div>
 
                 <div>
-                  {/* Product Tag & Case Study Action */}
-                  <div className="flex items-center justify-between gap-2 mb-4 pt-3 border-t border-[#E0C46B]/15">
+                  {/* Product Tag & Location Badge */}
+                  <div className="flex items-center justify-between gap-2 pt-3 border-t border-[#E0C46B]/15">
                     <button
                       onClick={() => onOpenQuoteModal && onOpenQuoteModal(item.productUsed)}
                       className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-[#243A5E]/20 text-[#E6DFC7] border border-[#243A5E]/30 text-[11px] font-semibold hover:bg-[#243A5E]/30 transition-colors"
@@ -881,32 +832,9 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                       {item.productUsed}
                     </button>
 
-                    <button
-                      onClick={() => setSelectedCaseStudy(item)}
-                      className="inline-flex items-center gap-1 text-[11px] font-bold text-[#F3D373] hover:underline"
-                    >
-                      <FileText className="w-3 h-3" />
-                      Case Study
-                    </button>
-                  </div>
-
-                  {/* Client Profile */}
-                  <div className="flex items-center gap-3 pt-3 border-t border-[#E0C46B]/15">
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#E0C46B] to-[#C99C33] text-[#4A4226] font-serif-heading font-black text-sm flex items-center justify-center shrink-0 shadow-md">
-                      {item.initials}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-1.5">
-                        <h4 className="text-sm font-bold text-white truncate">{item.name}</h4>
-                        {item.verified && (
-                          <CheckCircle2 className="w-4 h-4 text-[#243A5E] shrink-0" title="Verified Client" />
-                        )}
-                      </div>
-                      <p className="text-xs text-[#E0C46B] truncate">{item.title}, {item.company}</p>
-                      <div className="flex items-center gap-1 text-[11px] text-[#DDD5BC] mt-0.5">
-                        <MapPin className="w-3 h-3 text-[#E0C46B]" />
-                        {item.location}
-                      </div>
+                    <div className="flex items-center gap-1 text-[11px] text-[#DDD5BC]">
+                      <MapPin className="w-3 h-3 text-[#E0C46B]" />
+                      {item.location}
                     </div>
                   </div>
                 </div>
