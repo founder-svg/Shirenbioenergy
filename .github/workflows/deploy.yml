@@ -38,6 +38,13 @@ jobs:
       - name: Build Production Bundle
         run: npm run build
 
+      - name: Copy build output to dist/dist for multi-path compatibility
+        run: |
+          mkdir -p dist/dist
+          cp -r dist/assets dist/dist/assets
+          cp dist/index.html dist/dist/index.html
+          cp CNAME dist/CNAME || true
+
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
