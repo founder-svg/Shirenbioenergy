@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, ShieldCheck, Truck, Factory, ArrowRight } from 'lucide-react';
-import { logisticsData } from '../assets/imageData.js';
+import cleanLogistics from '../assets/images/clean_logistics.jpg';
 
 import TestimonialsSection from '../components/TestimonialsSection';
 
@@ -57,7 +57,7 @@ export default function AboutPage({ onOpenQuoteModal }) {
           <div className="lg:col-span-6">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-[#F7F1E4]">
               <img
-                src={logisticsData}
+                src={cleanLogistics}
                 alt="Shiren Bioenergy Gandhidham Logistics Hub"
                 className="w-full h-96 object-cover"
               />

@@ -2,7 +2,7 @@ import boilerFacility from './images/biomass_boiler_facility.jpg';
 import boilerOperations from './images/boiler_operations.jpg';
 import pelletsShowcaseHD from './images/pellets_showcase_hd.jpg';
 import briquettesShowcaseHD from './images/briquettes_showcase_hd.jpg';
-import logistics from './images/logistics.jpg';
+import logistics from './images/clean_logistics.jpg';
 import agroProcessing from './images/agro_processing.jpg';
 import foodProcessing from './images/food_processing.jpg';
 import industrialHeating from './images/industrial_heating.jpg';
