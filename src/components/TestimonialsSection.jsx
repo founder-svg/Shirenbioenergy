@@ -644,31 +644,14 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                     className="w-[320px] sm:w-[380px] shrink-0 bg-gradient-to-b from-[#5E5431]/90 to-[#4A4226]/95 border border-[#E0C46B]/30 rounded-2xl p-5 flex flex-col justify-between shadow-xl hover:border-[#E0C46B] transition-all duration-300 hover:scale-[1.02] cursor-pointer"
                   >
                     <div>
-                      {/* Quote Icon & Rating (Click Rating to toggle review) */}
+                      {/* Quote Icon & Rating Badge */}
                       <div className="flex items-center justify-between mb-3">
                         <Quote className="w-7 h-7 text-[#E0C46B]/40 group-hover:text-[#E0C46B] transition-colors" />
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            toggleReview(item.id);
-                          }}
-                          className="flex items-center gap-1.5 bg-[#4A4226] hover:bg-[#5E5431] px-2.5 py-1 rounded-full border border-[#E0C46B]/40 transition-all duration-200 cursor-pointer shadow-sm hover:scale-105 active:scale-95 group/rating"
-                          title="Click to read full client review"
-                        >
+                        <div className="flex items-center gap-1.5 bg-[#4A4226] px-3 py-1 rounded-full border border-[#E0C46B]/40 shadow-sm">
                           <Star className="w-3.5 h-3.5 fill-[#F3D373] stroke-[#F3D373]" />
-                          <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)}</span>
-                          <span className="text-[10px] text-[#E0C46B] font-semibold underline underline-offset-2 ml-0.5">
-                            {expandedReviewIds[item.id] ? 'Hide Review' : 'Read Review'}
-                          </span>
-                        </button>
-                      </div>
-
-                      {/* Expandable Review Text */}
-                      {expandedReviewIds[item.id] && (
-                        <div className="mb-3 p-3 rounded-xl bg-[#4A4226]/90 border border-[#E0C46B]/30 text-xs text-[#F7F1E4] italic leading-relaxed animate-in fade-in slide-in-from-top-1 duration-200">
-                          "{item.review}"
+                          <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)} / 5.0</span>
                         </div>
-                      )}
+                      </div>
 
                       {/* Key Metrics Badges */}
                       <div className="grid grid-cols-2 gap-2 mb-4">
@@ -747,32 +730,15 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                   key={`${item.id}-${idx}`}
                   className="bg-gradient-to-b from-[#5E5431]/90 to-[#4A4226]/95 border border-[#E0C46B]/30 rounded-2xl p-6 flex flex-col justify-between shadow-xl hover:border-[#E0C46B] transition-all duration-300 group hover:-translate-y-1 relative"
                 >
-                  {/* Top Header: Quote Icon & Rating */}
+                  {/* Top Header: Quote Icon & Rating Badge */}
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <Quote className="w-8 h-8 text-[#E0C46B]/40 group-hover:text-[#E0C46B] transition-colors" />
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          toggleReview(item.id);
-                        }}
-                        className="flex items-center gap-1.5 bg-[#4A4226] hover:bg-[#5E5431] px-3 py-1 rounded-full border border-[#E0C46B]/40 transition-all duration-200 cursor-pointer shadow-sm hover:scale-105 active:scale-95 group/rating"
-                        title="Click to read full client review"
-                      >
+                      <div className="flex items-center gap-1.5 bg-[#4A4226] px-3 py-1 rounded-full border border-[#E0C46B]/40 shadow-sm">
                         <Star className="w-3.5 h-3.5 fill-[#F3D373] stroke-[#F3D373]" />
-                        <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)}</span>
-                        <span className="text-[11px] text-[#E0C46B] font-semibold underline underline-offset-2 ml-0.5">
-                          {expandedReviewIds[item.id] ? 'Hide Review' : 'Read Review'}
-                        </span>
-                      </button>
-                    </div>
-
-                    {/* Expandable Review Text */}
-                    {expandedReviewIds[item.id] && (
-                      <div className="mb-4 p-3.5 rounded-xl bg-[#4A4226]/90 border border-[#E0C46B]/30 text-xs sm:text-sm text-[#F7F1E4] italic leading-relaxed animate-in fade-in slide-in-from-top-1 duration-200">
-                        "{item.review}"
+                        <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)} / 5.0</span>
                       </div>
-                    )}
+                    </div>
 
                     {/* Key Metrics Chips */}
                     <div className="grid grid-cols-2 gap-2 mb-5">
@@ -881,31 +847,14 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                 className="bg-gradient-to-b from-[#5E5431]/90 to-[#4A4226]/95 border border-[#E0C46B]/30 rounded-2xl p-6 flex flex-col justify-between shadow-xl hover:border-[#E0C46B] transition-all duration-300 group hover:-translate-y-1"
               >
                 <div>
-                  {/* Quote Icon & Star Rating */}
+                  {/* Quote Icon & Star Rating Badge */}
                   <div className="flex items-center justify-between mb-4">
                     <Quote className="w-8 h-8 text-[#E0C46B]/40 group-hover:text-[#E0C46B] transition-colors" />
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        toggleReview(item.id);
-                      }}
-                      className="flex items-center gap-1.5 bg-[#4A4226] hover:bg-[#5E5431] px-3 py-1 rounded-full border border-[#E0C46B]/40 transition-all duration-200 cursor-pointer shadow-sm hover:scale-105 active:scale-95 group/rating"
-                      title="Click to read full client review"
-                    >
+                    <div className="flex items-center gap-1.5 bg-[#4A4226] px-3 py-1 rounded-full border border-[#E0C46B]/40 shadow-sm">
                       <Star className="w-3.5 h-3.5 fill-[#F3D373] stroke-[#F3D373]" />
-                      <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)}</span>
-                      <span className="text-[11px] text-[#E0C46B] font-semibold underline underline-offset-2 ml-0.5">
-                        {expandedReviewIds[item.id] ? 'Hide Review' : 'Read Review'}
-                      </span>
-                    </button>
-                  </div>
-
-                  {/* Expandable Review Text */}
-                  {expandedReviewIds[item.id] && (
-                    <div className="mb-4 p-3.5 rounded-xl bg-[#4A4226]/90 border border-[#E0C46B]/30 text-xs sm:text-sm text-[#F7F1E4] italic leading-relaxed animate-in fade-in slide-in-from-top-1 duration-200">
-                      "{item.review}"
+                      <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)} / 5.0</span>
                     </div>
-                  )}
+                  </div>
 
                   {/* Key Metrics Chips */}
                   <div className="grid grid-cols-2 gap-2 mb-5">

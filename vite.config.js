@@ -14,6 +14,21 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    assetsInlineLimit: 0, // Never inline images into JS/HTML bundle. Emit every image as a separate file under 1MB!
+    assetsInlineLimit: 0, // Never inline images into JS/HTML bundle.
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react')) {
+              return 'vendor-react';
+            }
+            if (id.includes('lucide-react') || id.includes('framer-motion')) {
+              return 'vendor-ui';
+            }
+            return 'vendor';
+          }
+        },
+      },
+    },
   },
 })
