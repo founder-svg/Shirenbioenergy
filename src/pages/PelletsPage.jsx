@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight, Flame, Leaf, Layers, ShieldCheck, AlertCircle } from 'lucide-react';
 import TestimonialsSection from '../components/TestimonialsSection';
-import { logisticsData } from '../assets/imageData.js';
+import cleanLogistics from '../assets/images/clean_logistics.jpg';
 import { 
   woodPelletsData, 
   groundnutPelletsData, 
@@ -135,7 +135,7 @@ export default function PelletsPage({ onOpenQuoteModal }) {
             <div className="group relative rounded-2xl overflow-hidden border-2 border-[#B78A2D]/40 shadow-md bg-[#4A4226]">
               <div className="h-56 overflow-hidden">
                 <img 
-                  src={logisticsData} 
+                  src={cleanLogistics} 
                   alt="Gandhidham Bulk Logistics & Freight Truck Supply" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
