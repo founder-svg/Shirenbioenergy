@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --deep-bg: #3D351E;
+    --forest-green: #5B5030;
+    --secondary-green: #243A5E;
+    --biomass-green: #243A5E;
+    --gold: #C99C33;
+    --soft-gold: #F3D373;
+    --cream: #FBF9F2;
+    --ivory: #FFFFFF;
+    --earth-brown: #62482B;
+    --text-primary: #2C2718;
+    --text-secondary: #4C432A;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', 'Manrope', sans-serif;
+    color: var(--text-primary);
+    background-color: var(--cream);
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Custom Leaf Cursor for Desktop Pointers */
+  @media (pointer: fine) {
+    *, body, a, button, input, select, textarea, [role="button"] {
+      cursor: url('./assets/user-leaf-cutout.png') 0 0, none !important;
+    }
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom Design Token Utility Classes */
+.bg-deep-bg { background-color: #3D351E; }
+.bg-forest-green { background-color: #5B5030; }
+.bg-secondary-green { background-color: #243A5E; }
+.bg-biomass-green { background-color: #243A5E; }
+.bg-gold { background-color: #C99C33; }
+.bg-soft-gold { background-color: #F3D373; }
+.bg-cream { background-color: #FBF9F2; }
+.bg-ivory { background-color: #FFFFFF; }
+.bg-earth-brown { background-color: #62482B; }
+
+.text-deep-bg { color: #3D351E; }
+.text-forest-green { color: #5B5030; }
+.text-secondary-green { color: #243A5E; }
+.text-biomass-green { color: #243A5E; }
+.text-gold { color: #C99C33; }
+.text-soft-gold { color: #F3D373; }
+.text-cream { color: #FBF9F2; }
+.text-ivory { color: #FFFFFF; }
+.text-earth-brown { color: #62482B; }
+
+.border-gold { border-color: #C99C33; }
+.border-soft-gold { border-color: #F3D373; }
+.border-forest-green { border-color: #5B5030; }
+.border-cream-dark { border-color: #E2DAC6; }
+
+.font-serif-heading {
+  font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Glass & Glow utilities */
+.glass-panel {
+  background: rgba(7, 26, 18, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(183, 138, 45, 0.3);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFFDF7 0%, #E0C46B 40%, #B78A2D 80%, #FFFDF7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Infinite Right-to-Left Testimonial Marquee Animation */
+@keyframes testimonialSlideRTL {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.testimonials-marquee-track {
+  display: flex;
+  width: max-content;
+  animation-name: testimonialSlideRTL;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 55s;
+  will-change: transform;
+}
+
+.testimonials-marquee-track:hover,
+.testimonials-marquee-track.is-paused {
+  animation-play-state: paused !important;
+}
+
+.animate-marquee-slow {
+  animation-duration: 75s !important;
+}
+
+.animate-marquee-normal {
+  animation-duration: 55s !important;
+}
+
+.animate-marquee-brisk {
+  animation-duration: 40s !important;
+}
+
+/* Continuous Right-to-Left Product Slider Marquee Animation */
+@keyframes productSlideRTL {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.product-marquee-track {
+  display: flex;
+  width: max-content;
+  animation-name: productSlideRTL;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 50s;
+  will-change: transform;
+}
+
+.product-marquee-track:hover,
+.product-marquee-track.is-paused {
+  animation-play-state: paused !important;
+}
+
+
+

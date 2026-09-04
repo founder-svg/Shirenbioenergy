@@ -1,0 +1,22 @@
+import boilerFacility from './images/biomass_boiler_facility.jpg';
+import boilerOperations from './images/boiler_operations.jpg';
+import pelletsShowcaseHD from './images/pellets_showcase_hd.jpg';
+import briquettesShowcaseHD from './images/briquettes_showcase_hd.jpg';
+import logistics from './images/logistics.jpg';
+import agroProcessing from './images/agro_processing.jpg';
+import foodProcessing from './images/food_processing.jpg';
+import industrialHeating from './images/industrial_heating.jpg';
+import manufacturing from './images/manufacturing.jpg';
+import textileIndustry from './images/textile_industry.jpg';
+
+export const boilerData = boilerFacility;
+export const boilerOpsData = boilerOperations;
+export const pelletsData = pelletsShowcaseHD;
+export const briquettesData = briquettesShowcaseHD;
+export const bannerData = boilerFacility;
+export const logisticsData = logistics;
+export const agroData = agroProcessing;
+export const foodData = foodProcessing;
+export const heatingData = industrialHeating;
+export const mfgData = manufacturing;
+export const textileData = textileIndustry;
