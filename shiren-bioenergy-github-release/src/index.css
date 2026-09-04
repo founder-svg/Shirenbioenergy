@@ -26,13 +26,6 @@
     overflow-x: hidden;
   }
 
-  /* Custom Leaf Cursor for Desktop Pointers */
-  @media (pointer: fine) {
-    *, body, a, button, input, select, textarea, [role="button"] {
-      cursor: url('./assets/user-leaf-cutout.png') 0 0, none !important;
-    }
-  }
-
   h1, h2, h3, h4, .font-heading {
     font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
   }

@@ -603,8 +603,12 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                       <div className="flex items-center justify-between mb-3">
                         <Quote className="w-7 h-7 text-[#E0C46B]/40 group-hover:text-[#E0C46B] transition-colors" />
                         <div className="flex items-center gap-1.5 bg-[#4A4226] px-3 py-1 rounded-full border border-[#E0C46B]/40 shadow-sm">
-                          <Star className="w-3.5 h-3.5 fill-[#F3D373] stroke-[#F3D373]" />
-                          <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)} / 5.0</span>
+                          <div className="flex items-center gap-0.5">
+                            {[...Array(5)].map((_, i) => (
+                              <Star key={i} className="w-3 h-3 fill-[#F3D373] stroke-[#F3D373]" />
+                            ))}
+                          </div>
+                          <span className="text-xs font-extrabold text-[#F3D373] ml-0.5">{item.rating.toFixed(1)}</span>
                         </div>
                       </div>
 
@@ -664,8 +668,12 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                     <div className="flex items-center justify-between mb-4">
                       <Quote className="w-8 h-8 text-[#E0C46B]/40 group-hover:text-[#E0C46B] transition-colors" />
                       <div className="flex items-center gap-1.5 bg-[#4A4226] px-3 py-1 rounded-full border border-[#E0C46B]/40 shadow-sm">
-                        <Star className="w-3.5 h-3.5 fill-[#F3D373] stroke-[#F3D373]" />
-                        <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)} / 5.0</span>
+                        <div className="flex items-center gap-0.5">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="w-3 h-3 fill-[#F3D373] stroke-[#F3D373]" />
+                          ))}
+                        </div>
+                        <span className="text-xs font-extrabold text-[#F3D373] ml-0.5">{item.rating.toFixed(1)}</span>
                       </div>
                     </div>
 
