@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scratch/create_release_folder.js",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "oxlint"
   },
