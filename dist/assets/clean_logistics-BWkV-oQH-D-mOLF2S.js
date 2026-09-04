@@ -1,0 +1,1 @@
+var e=``+new URL(``+new URL(`clean_logistics-DvOiEy_Z-DvOiEy_Z.jpg`,import.meta.url).href,``+import.meta.url).href;export{e as t};

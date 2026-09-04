@@ -43,6 +43,8 @@ jobs:
           mkdir -p dist/dist
           cp -r dist/assets dist/dist/assets
           cp dist/index.html dist/dist/index.html
+          cp dist/robots.txt dist/dist/robots.txt || true
+          cp dist/sitemap.xml dist/dist/sitemap.xml || true
           cp CNAME dist/CNAME || true
 
       - name: Deploy to gh-pages branch
