@@ -5,7 +5,6 @@ import Footer from './components/Footer';
 import QuoteModal from './components/QuoteModal';
 import WhatsAppButton from './components/WhatsAppButton';
 import MobileStickyBar from './components/MobileStickyBar';
-import PelletCursor from './components/PelletCursor';
 import QuickInquiryTab from './components/QuickInquiryTab';
 
 import HomePage from './pages/HomePage';
@@ -86,9 +85,6 @@ export default function App() {
 
       {/* Fixed Vertical Quick Inquiry Side Tab */}
       <QuickInquiryTab onOpenQuoteModal={handleOpenQuoteModal} />
-
-      {/* Interactive Biomass Pellet Cursor & Touch Splash Effect */}
-      <PelletCursor />
     </div>
   );
 }
