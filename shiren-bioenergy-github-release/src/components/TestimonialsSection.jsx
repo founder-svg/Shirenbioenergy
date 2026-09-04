@@ -9,6 +9,9 @@ import {
 const testimonialsData = [
   {
     id: 1,
+    name: "Ramesh Patel",
+    title: "Managing Director",
+    company: "Patel Ceramics Ltd.",
     location: "Morbi, Gujarat",
     industry: "Ceramic & Glass",
     category: "Briquettes",
@@ -21,10 +24,14 @@ const testimonialsData = [
     review: "Shiren Bioenergy's 90mm biomass briquettes have reduced our ceramic kiln fuel costs by 28% compared to imported coal. Excellent calorific value (4000+ kcal/kg) and consistent low moisture delivery to Morbi.",
     caseStudy: "Transitioned 2 continuous tunnel kilns from imported Indonesian coal to 90mm biomass briquettes. Achieved zero clinker formation, reduced sulfur emissions by 92%, and lowered annual fuel expenditure by ₹42 Lakhs.",
     verified: true,
+    initials: "RP",
     bgColor: "bg-emerald-900/60"
   },
   {
     id: 2,
+    name: "Jayesh Shah",
+    title: "Operations Head",
+    company: "Shah Textile Mills",
     location: "Surat, Gujarat",
     industry: "Textile & Dyes",
     category: "Pellets",
@@ -37,10 +44,14 @@ const testimonialsData = [
     review: "We switched to Shiren's 8mm premium wood pellets for our thermal steam boilers. The ash content is consistently below 2%, requiring far less maintenance and blowdown cycles. Outstanding service from Gandhidham.",
     caseStudy: "Pneumatic pellet feeding system setup with 8mm premium wood pellets. Reduced boiler maintenance downtime from bi-weekly to bi-monthly, and maintained steady 14 bar steam pressure throughout dye cycle runs.",
     verified: true,
+    initials: "JS",
     bgColor: "bg-amber-900/60"
   },
   {
     id: 3,
+    name: "Nitin Vora",
+    title: "Procurement Director",
+    company: "Vora Chemical Industries",
     location: "Ankleshwar, Gujarat",
     industry: "Chemical & Pharma",
     category: "Pellets",
@@ -53,10 +64,14 @@ const testimonialsData = [
     review: "Reliable recurring supply is critical for our continuous chemical synthesis reactors. Shiren Bioenergy has never missed a delivery schedule in 14 months. Highly recommended biomass supply partner in Gujarat.",
     caseStudy: "Dedicated 14-month continuous supply agreement for 600 MT/month. Buffer storage managed at Gandhidham warehouse ensuring 24-hour emergency delivery turnaround during monsoon seasons.",
     verified: true,
+    initials: "NV",
     bgColor: "bg-teal-900/60"
   },
   {
     id: 4,
+    name: "Rajesh Savani",
+    title: "Plant Manager",
+    company: "Savani Foods & Agro",
     location: "Rajkot, Gujarat",
     industry: "Food Processing",
     category: "Briquettes",
@@ -69,10 +84,14 @@ const testimonialsData = [
     review: "High GCV pellets with uniform compression density. Their lab test reports match every single dispatch batch from Gandhidham. Clean combustion with minimal smoke emission for our food processing unit.",
     caseStudy: "Replaced FO (Furnace Oil) with high-density groundnut shell briquettes for hot air generators in food dehydrators. Zero residual taint, 100% food safety compliance, and 31% direct fuel bill reduction.",
     verified: true,
+    initials: "RS",
     bgColor: "bg-green-900/60"
   },
   {
     id: 5,
+    name: "Pankaj Mehta",
+    title: "General Manager",
+    company: "Mehta Dyes & Intermediates",
     location: "Ahmedabad, Gujarat",
     industry: "Textile & Dyes",
     category: "Briquettes",
@@ -85,10 +104,14 @@ const testimonialsData = [
     review: "Transitioning from furnace oil to biomass briquettes was seamless with Shiren Bioenergy's technical support. Our carbon footprint dropped significantly and fuel expenditure reduced by over 30%.",
     caseStudy: "Technical guidance provided for grate modification from FO burner to 70mm biomass briquette feeding. ROI on boiler retrofit achieved within 4.5 months of continuous operation.",
     verified: true,
+    initials: "PM",
     bgColor: "bg-emerald-800/60"
   },
   {
     id: 6,
+    name: "Harishbhai Thummar",
+    title: "Owner & CEO",
+    company: "Thummar Cotton Ginning",
     location: "Jamnagar, Gujarat",
     industry: "Textile & Dyes",
     category: "Pellets",
@@ -101,10 +124,14 @@ const testimonialsData = [
     review: "Honest pricing, full transparency on weighbridge scale slips, and top quality biomass briquettes. Truly the most dependable biomass fuel supplier in the Saurashtra region.",
     caseStudy: "Direct computerised weighbridge slip integration with dispatch trucks from Saurashtra hubs. Verified moisture tests under 7% upon truck arrival at plant gates.",
     verified: true,
+    initials: "HT",
     bgColor: "bg-amber-800/60"
   },
   {
     id: 7,
+    name: "Dharmesh Solanki",
+    title: "Chief Utilities Engineer",
+    company: "Solanki Power & Utilities",
     location: "Gandhidham, Kutch",
     industry: "Chemical & Pharma",
     category: "Pellets",
@@ -117,10 +144,14 @@ const testimonialsData = [
     review: "Being located in Kutch, we needed immediate bulk logistics for 200 Tons/month. Shiren Bioenergy dispatched our PO within 24 hours with certified moisture and GCV parameters.",
     caseStudy: "Implemented just-in-time (JIT) biomass supply model from Gandhidham facility, reducing plant warehouse inventory holding costs while maintaining uninterrupted 24/7 boiler firing.",
     verified: true,
+    initials: "DS",
     bgColor: "bg-teal-800/60"
   },
   {
     id: 8,
+    name: "Pravinbhai Patel",
+    title: "Director of Supply Chain",
+    company: "Patel Paper Products",
     location: "Vapi, Gujarat",
     industry: "Paper & Packaging",
     category: "Briquettes",
@@ -133,10 +164,14 @@ const testimonialsData = [
     review: "Great moisture control strictly under 8%. Their biomass briquettes burn evenly and maintain steady steam pressure in our paper drying cylinders without clinker formation.",
     caseStudy: "Prevented paper roll moisture defects by eliminating steam pressure drops during boiler firing. Maintained uniform GCV thermal output across 3 shift rotations.",
     verified: true,
+    initials: "PP",
     bgColor: "bg-green-800/60"
   },
   {
     id: 9,
+    name: "Bhavesh Joshi",
+    title: "ESG & Utilities Head",
+    company: "Joshi Pharmaceuticals",
     location: "Vadodara, Gujarat",
     industry: "Chemical & Pharma",
     category: "Pellets",
@@ -149,10 +184,14 @@ const testimonialsData = [
     review: "Compliance and eco-certifications are strict in pharma manufacturing. Shiren Bioenergy provides complete batch documentation and green energy verification for our annual ESG audits.",
     caseStudy: "Provided batch-wise lab test certificates for GCV, moisture, ash, and carbon neutrality. Enabled Joshi Pharma to achieve Gold rating in Scope 1 carbon emission reduction.",
     verified: true,
+    initials: "BJ",
     bgColor: "bg-emerald-900/70"
   },
   {
     id: 10,
+    name: "Arvindbhai Parikh",
+    title: "Factory Owner",
+    company: "Parikh Metal Processing",
     location: "Bhavnagar, Gujarat",
     industry: "Metal & Metallurgy",
     category: "Briquettes",
@@ -165,10 +204,14 @@ const testimonialsData = [
     review: "Prompt customer support and consistent briquette size. Our furnace efficiency improved by 15% with their agro-biomass briquettes. Very satisfied with their long-term supply contract.",
     caseStudy: "Replaced lignite coal in metal reheating furnace. Standardised 90mm briquette length allowed optimal air fuel ratio and increased throughput by 15%.",
     verified: true,
+    initials: "AP",
     bgColor: "bg-amber-900/70"
   },
   {
     id: 11,
+    name: "Sanjay Vaghela",
+    title: "Lead Energy Officer",
+    company: "Vaghela Infrastructure",
     location: "Kandla, Kutch",
     industry: "Ceramic & Glass",
     category: "Briquettes",
@@ -181,6 +224,7 @@ const testimonialsData = [
     review: "Local logistics advantage in Kutch coupled with extremely competitive pricing. Shiren Bioenergy is our primary green fuel partner for all multi-unit boiler installations.",
     caseStudy: "Optimised haulage routing from Gandhidham processing unit to Kandla port industrial area, cutting freight expenses by 18% compared to out-of-state biomass vendors.",
     verified: true,
+    initials: "SV",
     bgColor: "bg-teal-900/70"
   }
 ];
@@ -227,10 +271,11 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
     const matchesIndustry = activeIndustry === 'All' || t.industry === activeIndustry;
     const matchesCategory = activeCategory === 'All' || t.category === activeCategory;
     const matchesSearch = searchQuery === '' || 
+      t.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      t.company.toLowerCase().includes(searchQuery.toLowerCase()) ||
       t.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
       t.productUsed.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      t.gcv.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      t.savings.toLowerCase().includes(searchQuery.toLowerCase());
+      t.review.toLowerCase().includes(searchQuery.toLowerCase());
 
     return matchesIndustry && matchesCategory && matchesSearch;
   });
@@ -599,14 +644,31 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                     className="w-[320px] sm:w-[380px] shrink-0 bg-gradient-to-b from-[#5E5431]/90 to-[#4A4226]/95 border border-[#E0C46B]/30 rounded-2xl p-5 flex flex-col justify-between shadow-xl hover:border-[#E0C46B] transition-all duration-300 hover:scale-[1.02] cursor-pointer"
                   >
                     <div>
-                      {/* Quote Icon & Rating Badge */}
+                      {/* Quote Icon & Rating (Click Rating to toggle review) */}
                       <div className="flex items-center justify-between mb-3">
                         <Quote className="w-7 h-7 text-[#E0C46B]/40 group-hover:text-[#E0C46B] transition-colors" />
-                        <div className="flex items-center gap-1.5 bg-[#4A4226] px-3 py-1 rounded-full border border-[#E0C46B]/40 shadow-sm">
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleReview(item.id);
+                          }}
+                          className="flex items-center gap-1.5 bg-[#4A4226] hover:bg-[#5E5431] px-2.5 py-1 rounded-full border border-[#E0C46B]/40 transition-all duration-200 cursor-pointer shadow-sm hover:scale-105 active:scale-95 group/rating"
+                          title="Click to read full client review"
+                        >
                           <Star className="w-3.5 h-3.5 fill-[#F3D373] stroke-[#F3D373]" />
-                          <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)} / 5.0</span>
-                        </div>
+                          <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)}</span>
+                          <span className="text-[10px] text-[#E0C46B] font-semibold underline underline-offset-2 ml-0.5">
+                            {expandedReviewIds[item.id] ? 'Hide Review' : 'Read Review'}
+                          </span>
+                        </button>
                       </div>
+
+                      {/* Expandable Review Text */}
+                      {expandedReviewIds[item.id] && (
+                        <div className="mb-3 p-3 rounded-xl bg-[#4A4226]/90 border border-[#E0C46B]/30 text-xs text-[#F7F1E4] italic leading-relaxed animate-in fade-in slide-in-from-top-1 duration-200">
+                          "{item.review}"
+                        </div>
+                      )}
 
                       {/* Key Metrics Badges */}
                       <div className="grid grid-cols-2 gap-2 mb-4">
@@ -622,8 +684,8 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                     </div>
 
                     <div>
-                      {/* Product Tag & Location Badge */}
-                      <div className="flex items-center justify-between gap-2 pt-2.5 border-t border-[#E0C46B]/15">
+                      {/* Product Tag & Case Study Trigger */}
+                      <div className="flex items-center justify-between gap-2 mb-3 pt-2.5 border-t border-[#E0C46B]/15">
                         <button
                           onClick={(e) => {
                             e.stopPropagation();
@@ -635,9 +697,35 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                           {item.productUsed}
                         </button>
 
-                        <div className="flex items-center gap-1 text-[10px] text-[#DDD5BC]">
-                          <MapPin className="w-3 h-3 text-[#E0C46B]" />
-                          {item.location}
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSelectedCaseStudy(item);
+                          }}
+                          className="inline-flex items-center gap-1 text-[10px] font-bold text-[#F3D373] hover:underline"
+                        >
+                          <FileText className="w-3 h-3" />
+                          Case Study
+                        </button>
+                      </div>
+
+                      {/* Client Profile */}
+                      <div className="flex items-center gap-2.5 pt-2 border-t border-[#E0C46B]/15">
+                        <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#E0C46B] to-[#C99C33] text-[#4A4226] font-serif-heading font-black text-xs flex items-center justify-center shrink-0 shadow-md">
+                          {item.initials}
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-1">
+                            <h4 className="text-xs font-bold text-white truncate">{item.name}</h4>
+                            {item.verified && (
+                              <CheckCircle2 className="w-3.5 h-3.5 text-[#243A5E] shrink-0" title="Verified Client" />
+                            )}
+                          </div>
+                          <p className="text-[11px] text-[#E0C46B] truncate">{item.title}, {item.company}</p>
+                          <div className="flex items-center gap-1 text-[10px] text-[#DDD5BC]">
+                            <MapPin className="w-3 h-3 text-[#E0C46B]" />
+                            {item.location}
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -659,15 +747,32 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                   key={`${item.id}-${idx}`}
                   className="bg-gradient-to-b from-[#5E5431]/90 to-[#4A4226]/95 border border-[#E0C46B]/30 rounded-2xl p-6 flex flex-col justify-between shadow-xl hover:border-[#E0C46B] transition-all duration-300 group hover:-translate-y-1 relative"
                 >
-                  {/* Top Header: Quote Icon & Rating Badge */}
+                  {/* Top Header: Quote Icon & Rating */}
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <Quote className="w-8 h-8 text-[#E0C46B]/40 group-hover:text-[#E0C46B] transition-colors" />
-                      <div className="flex items-center gap-1.5 bg-[#4A4226] px-3 py-1 rounded-full border border-[#E0C46B]/40 shadow-sm">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleReview(item.id);
+                        }}
+                        className="flex items-center gap-1.5 bg-[#4A4226] hover:bg-[#5E5431] px-3 py-1 rounded-full border border-[#E0C46B]/40 transition-all duration-200 cursor-pointer shadow-sm hover:scale-105 active:scale-95 group/rating"
+                        title="Click to read full client review"
+                      >
                         <Star className="w-3.5 h-3.5 fill-[#F3D373] stroke-[#F3D373]" />
-                        <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)} / 5.0</span>
-                      </div>
+                        <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)}</span>
+                        <span className="text-[11px] text-[#E0C46B] font-semibold underline underline-offset-2 ml-0.5">
+                          {expandedReviewIds[item.id] ? 'Hide Review' : 'Read Review'}
+                        </span>
+                      </button>
                     </div>
+
+                    {/* Expandable Review Text */}
+                    {expandedReviewIds[item.id] && (
+                      <div className="mb-4 p-3.5 rounded-xl bg-[#4A4226]/90 border border-[#E0C46B]/30 text-xs sm:text-sm text-[#F7F1E4] italic leading-relaxed animate-in fade-in slide-in-from-top-1 duration-200">
+                        "{item.review}"
+                      </div>
+                    )}
 
                     {/* Key Metrics Chips */}
                     <div className="grid grid-cols-2 gap-2 mb-5">
@@ -683,8 +788,8 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                   </div>
 
                   <div>
-                    {/* Product Tag & Location Badge */}
-                    <div className="flex items-center justify-between gap-2 pt-3 border-t border-[#E0C46B]/15">
+                    {/* Interactive Product & Case Study Action Tags */}
+                    <div className="flex items-center justify-between gap-2 mb-4 pt-3 border-t border-[#E0C46B]/15">
                       <button
                         onClick={() => onOpenQuoteModal && onOpenQuoteModal(item.productUsed)}
                         className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-[#243A5E]/20 text-[#E6DFC7] border border-[#243A5E]/30 text-[11px] font-semibold hover:bg-[#243A5E]/30 transition-colors"
@@ -694,9 +799,32 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                         {item.productUsed}
                       </button>
 
-                      <div className="flex items-center gap-1 text-[11px] text-[#DDD5BC]">
-                        <MapPin className="w-3 h-3 text-[#E0C46B]" />
-                        {item.location}
+                      <button
+                        onClick={() => setSelectedCaseStudy(item)}
+                        className="inline-flex items-center gap-1 text-[11px] font-bold text-[#F3D373] hover:underline"
+                      >
+                        <FileText className="w-3 h-3" />
+                        Case Study
+                      </button>
+                    </div>
+
+                    {/* Client Profile */}
+                    <div className="flex items-center gap-3 pt-3 border-t border-[#E0C46B]/15">
+                      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#E0C46B] to-[#C99C33] text-[#4A4226] font-serif-heading font-black text-sm flex items-center justify-center shrink-0 shadow-md">
+                        {item.initials}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-1.5">
+                          <h4 className="text-sm font-bold text-white truncate">{item.name}</h4>
+                          {item.verified && (
+                            <CheckCircle2 className="w-4 h-4 text-[#243A5E] shrink-0" title="Verified Client" />
+                          )}
+                        </div>
+                        <p className="text-xs text-[#E0C46B] truncate">{item.title}, {item.company}</p>
+                        <div className="flex items-center gap-1 text-[11px] text-[#DDD5BC] mt-0.5">
+                          <MapPin className="w-3 h-3 text-[#E0C46B]" />
+                          {item.location}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -753,14 +881,31 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                 className="bg-gradient-to-b from-[#5E5431]/90 to-[#4A4226]/95 border border-[#E0C46B]/30 rounded-2xl p-6 flex flex-col justify-between shadow-xl hover:border-[#E0C46B] transition-all duration-300 group hover:-translate-y-1"
               >
                 <div>
-                  {/* Quote Icon & Star Rating Badge */}
+                  {/* Quote Icon & Star Rating */}
                   <div className="flex items-center justify-between mb-4">
                     <Quote className="w-8 h-8 text-[#E0C46B]/40 group-hover:text-[#E0C46B] transition-colors" />
-                    <div className="flex items-center gap-1.5 bg-[#4A4226] px-3 py-1 rounded-full border border-[#E0C46B]/40 shadow-sm">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleReview(item.id);
+                      }}
+                      className="flex items-center gap-1.5 bg-[#4A4226] hover:bg-[#5E5431] px-3 py-1 rounded-full border border-[#E0C46B]/40 transition-all duration-200 cursor-pointer shadow-sm hover:scale-105 active:scale-95 group/rating"
+                      title="Click to read full client review"
+                    >
                       <Star className="w-3.5 h-3.5 fill-[#F3D373] stroke-[#F3D373]" />
-                      <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)} / 5.0</span>
-                    </div>
+                      <span className="text-xs font-extrabold text-[#F3D373]">{item.rating.toFixed(1)}</span>
+                      <span className="text-[11px] text-[#E0C46B] font-semibold underline underline-offset-2 ml-0.5">
+                        {expandedReviewIds[item.id] ? 'Hide Review' : 'Read Review'}
+                      </span>
+                    </button>
                   </div>
+
+                  {/* Expandable Review Text */}
+                  {expandedReviewIds[item.id] && (
+                    <div className="mb-4 p-3.5 rounded-xl bg-[#4A4226]/90 border border-[#E0C46B]/30 text-xs sm:text-sm text-[#F7F1E4] italic leading-relaxed animate-in fade-in slide-in-from-top-1 duration-200">
+                      "{item.review}"
+                    </div>
+                  )}
 
                   {/* Key Metrics Chips */}
                   <div className="grid grid-cols-2 gap-2 mb-5">
@@ -776,8 +921,8 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                 </div>
 
                 <div>
-                  {/* Product Tag & Location Badge */}
-                  <div className="flex items-center justify-between gap-2 pt-3 border-t border-[#E0C46B]/15">
+                  {/* Product Tag & Case Study Action */}
+                  <div className="flex items-center justify-between gap-2 mb-4 pt-3 border-t border-[#E0C46B]/15">
                     <button
                       onClick={() => onOpenQuoteModal && onOpenQuoteModal(item.productUsed)}
                       className="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-[#243A5E]/20 text-[#E6DFC7] border border-[#243A5E]/30 text-[11px] font-semibold hover:bg-[#243A5E]/30 transition-colors"
@@ -787,9 +932,32 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                       {item.productUsed}
                     </button>
 
-                    <div className="flex items-center gap-1 text-[11px] text-[#DDD5BC]">
-                      <MapPin className="w-3 h-3 text-[#E0C46B]" />
-                      {item.location}
+                    <button
+                      onClick={() => setSelectedCaseStudy(item)}
+                      className="inline-flex items-center gap-1 text-[11px] font-bold text-[#F3D373] hover:underline"
+                    >
+                      <FileText className="w-3 h-3" />
+                      Case Study
+                    </button>
+                  </div>
+
+                  {/* Client Profile */}
+                  <div className="flex items-center gap-3 pt-3 border-t border-[#E0C46B]/15">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#E0C46B] to-[#C99C33] text-[#4A4226] font-serif-heading font-black text-sm flex items-center justify-center shrink-0 shadow-md">
+                      {item.initials}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-bold text-white truncate">{item.name}</h4>
+                        {item.verified && (
+                          <CheckCircle2 className="w-4 h-4 text-[#243A5E] shrink-0" title="Verified Client" />
+                        )}
+                      </div>
+                      <p className="text-xs text-[#E0C46B] truncate">{item.title}, {item.company}</p>
+                      <div className="flex items-center gap-1 text-[11px] text-[#DDD5BC] mt-0.5">
+                        <MapPin className="w-3 h-3 text-[#E0C46B]" />
+                        {item.location}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -815,22 +983,18 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
 
             {/* Modal Header */}
             <div className="flex items-start gap-4 mb-6 pr-8">
-              <div className="flex-1">
-                <div className="flex items-center gap-2 mb-2">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#E0C46B] to-[#C99C33] text-[#4A4226] font-serif-heading font-black text-xl flex items-center justify-center shrink-0 shadow-lg">
+                {selectedCaseStudy.initials}
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-1">
                   <span className="px-2.5 py-0.5 rounded-full bg-[#243A5E]/20 text-[#E6DFC7] border border-[#243A5E]/40 text-[10px] font-bold uppercase tracking-wider">
-                    Verified B2B Boiler Case Study
+                    Verified B2B Client Case Study
                   </span>
                   <CheckCircle2 className="w-4 h-4 text-[#243A5E]" />
                 </div>
-                <div className="flex items-center gap-2">
-                  <div className="flex items-center gap-1 text-[#F3D373]">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 fill-[#F3D373] stroke-[#F3D373]" />
-                    ))}
-                  </div>
-                  <span className="text-sm font-extrabold text-[#F3D373]">{selectedCaseStudy.rating.toFixed(1)} / 5.0 Rating</span>
-                </div>
-                <p className="text-xs text-[#E0C46B] mt-1">Location: {selectedCaseStudy.location} | Fuel: {selectedCaseStudy.productUsed}</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-white">{selectedCaseStudy.company}</h3>
+                <p className="text-xs text-[#E0C46B]">{selectedCaseStudy.name} ({selectedCaseStudy.title}) — {selectedCaseStudy.location}</p>
               </div>
             </div>
 
@@ -852,6 +1016,11 @@ export default function TestimonialsSection({ onOpenQuoteModal, initialFilter = 
                 <span className="block text-[10px] text-[#DDD5BC] uppercase font-bold">Boiler Setup</span>
                 <span className="text-xs font-bold text-[#E0C46B] truncate">{selectedCaseStudy.boilerType}</span>
               </div>
+            </div>
+
+            {/* Full Review Quote */}
+            <div className="bg-[#4A4226]/80 p-4 rounded-xl border border-[#E0C46B]/20 mb-6 italic text-sm text-[#F7F1E4] leading-relaxed">
+              "{selectedCaseStudy.review}"
             </div>
 
             {/* Case Study Details */}
